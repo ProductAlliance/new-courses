@@ -71,8 +71,10 @@ const CheckoutPages = {
 
 // List of domains we could be on, one per course
 const DomainRegexes = {
-  UPLEVEL:      /productuplevel\.com/i,
-  ENGAUTHORITY: /engauthority\.com/i,
+  // Work for productuplevel.com or productuplevel.webflow.io
+  // (so that that site is an accurate simulation)
+  UPLEVEL:      /productuplevel\./i,
+  ENGAUTHORITY: /engauthority\./i,
 }
 
 // Shorthand to check if the page we're on matches a given regex.
@@ -182,6 +184,9 @@ function createAndShowToast(options) {
   else {
     siteStylingClass = "uplevel";
   }
+
+  // NEW: use the classic styling for both sites
+  siteStylingClass = "classic";
 
 
   // The body text. Either an <a> or a plain ol' span if there's no
@@ -298,7 +303,7 @@ const FOMO_CONFIG = [
     "toasts": makeStandardCourseToasts(
       g_analytics.engauthority_sales,
       g_analytics.engauthority_downloads,
-      "EngAuthority",
+      "Eng Authority",
       "software engineers",
       CheckoutPages.ENGAUTHORITY,
     )
