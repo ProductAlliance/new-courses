@@ -152,6 +152,7 @@ function showEmailGrabPopup(){
   $('#webinarpopup').css({ "display": "flex", "opacity": 1 });
   $('.main-popup').css({ "display": "flex", "opacity": 1 });
   $('.popup-overlay').css({ "display": "flex", "opacity": 1 });
+  $('#email-2').focus();
 }
 
 
