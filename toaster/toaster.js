@@ -144,9 +144,11 @@ const ICONS = {
 /*
  * Public functions that we can call from anywhere on the page.
  */
-// Shows the popup that advertises the webinar and asks the user to
-// input their email address.
-function showWebinarPopup(){
+// Shows the popup that advertises the reimbursement request letter
+// and asks the user to input their email address.
+// Note that we reference this function name in a "javascript:" link, so
+// be sure to Cmd+F thoroughly to catch all instances of this function name
+function showEmailGrabPopup(){
   $('#webinarpopup').css({ "display": "flex", "opacity": 1 });
   $('.main-popup').css({ "display": "flex", "opacity": 1 });
   $('.popup-overlay').css({ "display": "flex", "opacity": 1 });
@@ -365,7 +367,7 @@ function getWebinarCtaURL() {
   let ctaURL = "#footer";
   if ($('#webinarpopup').length > 0){
     // the popup exists!
-    ctaURL = "javascript:showWebinarPopup()";
+    ctaURL = "javascript:showEmailGrabPopup()";
   }
 
   return ctaURL;
