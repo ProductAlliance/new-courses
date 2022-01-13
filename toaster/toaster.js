@@ -415,8 +415,8 @@ function makePromoToasts(numSales, numDownloads, courseName, studentTitles, chec
   return [
     // First, upsell the course itself
     {
-      "time": 2000,
-      "duration": 12000,
+      "time": 6000,
+      "duration": 20000,
       "text": `${numSales} ${studentTitles} enrolled in ${courseName} today and <strong>got their free, latest-gen ${giftName}</strong>.`,
       "ctaURL": checkoutURL,
       "icon": ICONS.gift,
@@ -424,7 +424,7 @@ function makePromoToasts(numSales, numDownloads, courseName, studentTitles, chec
     // Next, upsell the email-grabber popup that lets people download the
     // reimbursement request template
     {
-      "time": 8000,
+      "time": 20000,
       "duration": 0, // Make it persistent
       "text": `${numDownloads} ${studentTitles} downloaded our
         corporate <strong>reimbursement letter template</strong> today.`,
