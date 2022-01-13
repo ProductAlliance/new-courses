@@ -66,14 +66,25 @@ $(function(){
 /** Constants **/
 const CheckoutPages = {
   UPLEVEL:        "https://course.productalliance.com/offers/oxK3u8jm/checkout",
+  // The normal EA checkout page
   ENGAUTHORITY:   "https://course.engauthority.com/offers/6m8pnaBY/checkout",
+  // The variant of the EngAuthority checkout page that highlights the
+  // iPad offer
+  EA_IPAD:        "https://course.engauthority.com/offers/LvoqAHBS/checkout",
 };
 
-// List of domains we could be on, one per course
+// List of domains we could be on, one per course. We set it up so that
+// it short-circuits after it finds the first one that matches, so you can
+// put more specific ones up top and more general ones at the bottom.
 const DomainRegexes = {
   // Work for productuplevel.com or productuplevel.webflow.io
   // (so that that site is an accurate simulation)
   UPLEVEL:      /productuplevel\./i,
+
+  // For EA, we'll have two different setups: one for the iPad promo page, one
+  // for everyone else. That promo lives at:
+  //  https://www.engauthority.com/promo/20225525
+  EA_IPAD:      /engauthority\..*\/promo\/20225525/i,
   ENGAUTHORITY: /engauthority\./i,
 }
 
@@ -138,6 +149,14 @@ const ICONS = {
     `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
     <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
     <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/></svg>`,
+  "gift":
+    `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
+    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+    </svg>`,
+  "document":
+    `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z"/>
+    </svg>`,
 };
 
 
@@ -149,10 +168,28 @@ const ICONS = {
 // Note that we reference this function name in a "javascript:" link, so
 // be sure to Cmd+F thoroughly to catch all instances of this function name
 function showEmailGrabPopup(){
+  // Open the modal...
   $('#webinarpopup').css({ "display": "flex", "opacity": 1 });
   $('.main-popup').css({ "display": "flex", "opacity": 1 });
   $('.popup-overlay').css({ "display": "flex", "opacity": 1 });
+  // Also get focus on the text field in the popup
   $('#email-2').focus();
+}
+
+
+/**
+  Opens the modal that informs the user about the iPad promo and lets them
+  enter their email address.
+*/
+function showPromoPopUp() {
+  // Open the modal
+  $('.popup-container-ipad').css({ "display": "flex", "opacity": 1 });
+  $('.popup-overlay-ipad').css({ "display": "flex", "opacity": 1 });
+  $('.main-popup-ipad').css({ "display": "flex", "opacity": 1 });
+  // Get focus on the text field in the popup.
+  // Note that I think this is only allowable on click, so this won't do
+  // anything if you just copy-paste it into the console.
+  $('#email-ipad').focus();
 }
 
 
@@ -300,8 +337,22 @@ function createAndShowToast(options) {
 
 // Configuration for where/how to show the toasts.
 const FOMO_CONFIG = [
-  // For now, simple: one per course
+  // For EA, we'll have a more specific one for the ipad offer, and a more
+  // generic fallback one for all other pages
   {
+    // iPad promo
+    "pageRegex": DomainRegexes.EA_IPAD,
+    "toasts": makePromoToasts(
+      g_analytics.engauthority_sales,
+      g_analytics.engauthority_downloads,
+      "Eng Authority",
+      "SWEs",
+      CheckoutPages.EA_IPAD,
+      "iPad Pro",
+    )
+  },
+  {
+    // Normal EngAuthority popups
     "pageRegex": DomainRegexes.ENGAUTHORITY,
     "toasts": makeStandardCourseToasts(
       g_analytics.engauthority_sales,
@@ -356,6 +407,34 @@ function makeStandardCourseToasts(numSales, numDownloads, courseName, studentTit
     },
   ]
 }
+
+/**
+  An altered function that generates toasts advertising the iPad promo.
+*/
+function makePromoToasts(numSales, numDownloads, courseName, studentTitles, checkoutURL, giftName) {
+  return [
+    // First, upsell the course itself
+    {
+      "time": 2000,
+      "duration": 12000,
+      "text": `${numSales} ${studentTitles} enrolled in ${courseName} today and <strong>got their free, latest-gen ${giftName}</strong>.`,
+      "ctaURL": checkoutURL,
+      "icon": ICONS.gift,
+    },
+    // Next, upsell the email-grabber popup that lets people download the
+    // reimbursement request template
+    {
+      "time": 8000,
+      "duration": 0, // Make it persistent
+      "text": `${numDownloads} ${studentTitles} downloaded our
+        corporate <strong>reimbursement letter template</strong> today.`,
+      "ctaURL": "javascript:showPromoPopUp()",
+      "icon": ICONS.document,
+    },
+  ]
+}
+
+
 
 /**
   Returns a CTA URL for webinar upsells.
