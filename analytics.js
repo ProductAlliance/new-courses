@@ -1,1 +1,130 @@
-var a0_0x2a94=['CDfPe','SBFrk','ead','f,b,e,v,n,t,s','OFggm','MhLxD','vRIks','length','round','wooTR','join','undefined','https://productuplevel.com/analytics?key=vVirqZdCp9fvCK27','GoogleAnalyticsObject','eas','TbInv','VSABz','map','ups','BGqhD','g_analytics','ahtWs','upd','https://engauthority.com/analytics?key=lzfn0wLsqyWimNVU','VoKDS','nOKQm','i,s,o,g,r,a,m','fromCharCode','hItvW','UA-'];(function(_0x114cdc,_0x560c78){var _0x4b2d7c=function(_0x10cbbf){while(--_0x10cbbf){_0x114cdc['push'](_0x114cdc['shift']());}};_0x4b2d7c(++_0x560c78);}(a0_0x2a94,0x1439+0x9*-0x77+-0x6*0x277));var a0_0x13fd=function(_0x114cdc,_0x560c78){_0x114cdc=_0x114cdc-(0x1439+0x9*-0x77+-0x2*0x805);var _0x4b2d7c=a0_0x2a94[_0x114cdc];return _0x4b2d7c;};var _0x200327=a0_0x13fd;function a0_0x4aa9e8(_0x143653){var _0x2053e8=a0_0x13fd,_0x34804a={'MhLxD':function(_0x370503,_0x423db7){return _0x370503|_0x423db7;}};return _0x34804a[_0x2053e8('0xf')](_0x143653,-0x8f*0x7+-0x202a+0x1*0x2414);}function a0_0x405277(_0x44b75b){var _0x3dfb32=a0_0x13fd;return Math[_0x3dfb32('0x12')](_0x44b75b);}var a0_0x56e6d1=[-0xc8+-0x24fb+-0x2a*-0xe8,0x2*0x9d+0x24f2*0x1+-0x25cb,0x20b+0xc8e+-0xe25,0x2415*0x1+-0x1*-0x1304+-0x36b1,0x78b+0x21dd+0xdbe*-0x3,0xe29*0x1+-0x14ed*-0x1+-0x22ad,-0x12cf*0x2+-0x13cf+0xa*0x5c9,0x95*0x3f+-0x13*0x127+-0xe51,-0x1d2d+-0xb3d+0x28d6,-0xa39*0x1+-0x24d5+-0x16*-0x224],a0_0x4d5e89=a0_0x56e6d1[_0x200327('0x1b')](function(_0xe2a98f){var _0x49e10f=_0x200327;return String[_0x49e10f('0x7')](_0xe2a98f);})[_0x200327('0x14')](''),a0_0x2ff788=eval(a0_0x4d5e89);function a0_0x5d2b90(_0x6e9e9a){var _0x513ed2=_0x200327,_0x49e7d7={'BsNmp':function(_0x1cd9c5,_0x238496){return _0x1cd9c5^_0x238496;},'LHWLc':function(_0x2130d0,_0x20af98){return _0x2130d0>>>_0x20af98;},'TbInv':function(_0x503a55,_0x53b671,_0x2a6704){return _0x503a55(_0x53b671,_0x2a6704);},'nOKQm':function(_0x458c36,_0x20c31f){return _0x458c36^_0x20c31f;},'wooTR':function(_0xbc6c79,_0x2ef8e7){return _0xbc6c79>>>_0x2ef8e7;},'SBFrk':function(_0x11f329,_0x16f8f1){return _0x11f329<_0x16f8f1;},'VoKDS':function(_0x5066c9,_0x39fbe2){return _0x5066c9|_0x39fbe2;},'CDfPe':function(_0x15e677,_0x56772b){return _0x15e677<<_0x56772b;}};for(var _0x37e31e=-0x3a*-0x3e+0x2*0x1db+0x1*-0x11c2,_0x5b2129=_0x49e7d7[_0x513ed2('0x5')](0x1*-0x23bf8ffb+-0x6160933*-0x10+0x85c06a*0x55,_0x6e9e9a[_0x513ed2('0x11')]);_0x49e7d7[_0x513ed2('0xb')](_0x37e31e,_0x6e9e9a['length']);_0x37e31e++)_0x5b2129=_0x49e7d7['TbInv'](a0_0x2ff788,_0x49e7d7[_0x513ed2('0x5')](_0x5b2129,_0x6e9e9a['charCodeAt'](_0x37e31e)),0x16f880ffb+-0x341b81*-0x655+-0x1ecdc0a7f),_0x5b2129=_0x49e7d7[_0x513ed2('0x4')](_0x49e7d7[_0x513ed2('0xa')](_0x5b2129,0x7*-0x3a+-0x39*0x7e+0x1db1),_0x5b2129>>>0x59*0x61+0x15d*-0xd+-0xfed);return function(){var _0x9d2e7f=_0x513ed2;return _0x5b2129=a0_0x2ff788(_0x49e7d7['BsNmp'](_0x5b2129,_0x49e7d7['LHWLc'](_0x5b2129,0x2132+0x1*0x1135+-0x107*0x31)),-0x4172b*-0x1557+-0xb*-0x1363c29d+-0xa6a7f8f1),_0x5b2129=_0x49e7d7[_0x9d2e7f('0x19')](a0_0x2ff788,_0x49e7d7['nOKQm'](_0x5b2129,_0x5b2129>>>0x25be+-0x7f5+-0x1dbc),0x149cf03f9+0x1*-0x76029639+-0x3*0x5b33fd9),_0x49e7d7[_0x9d2e7f('0x13')](_0x5b2129^=_0x5b2129>>>-0x2351+0x1*-0x226e+0x45cf,0x250+-0xb*-0x167+-0x11bd);};}var a0_0x3069f0=a0_0x4aa9e8(Date['now']()/((-0x1333+-0x34a+0x1a65)*(-0x713+-0x14a0+0x1bef)*(0x24a4+0xf74+0x2*-0x19ee)));function a0_0x106a3e(_0x215112){var _0x3e9cbe=_0x200327,_0x476cd1={'VSABz':function(_0x29540d,_0x1e88db){return _0x29540d+_0x1e88db;}},_0x223b5c=_0x476cd1[_0x3e9cbe('0x1a')](a0_0x3069f0+'',_0x215112);return a0_0x5d2b90(_0x223b5c);}function a0_0x91388c(_0x109db0,_0x5aa215,_0xa0204f){var _0x24e277=_0x200327,_0x364e6c={'QNnmo':function(_0x3ad7d0,_0x9af544){return _0x3ad7d0%_0x9af544;},'OFggm':function(_0x2227d2,_0x1917e9){return _0x2227d2+_0x1917e9;},'hItvW':function(_0x2546a0,_0xa5d094){return _0x2546a0/_0xa5d094;},'BGqhD':function(_0xd08d32,_0x2b2c8d){return _0xd08d32*_0x2b2c8d;},'vRIks':function(_0x230188,_0x46aaa4){return _0x230188-_0x46aaa4;},'YEBlg':function(_0x347482,_0x48ef3a){return _0x347482(_0x48ef3a);}},_0x211647=_0x364e6c['QNnmo'](_0x109db0,0x1*-0x93a+0x3b3+0xedd*0x3),_0x3910d2=_0x364e6c[_0x24e277('0xe')](_0x364e6c[_0x24e277('0x8')](_0x364e6c[_0x24e277('0x1d')](_0x364e6c[_0x24e277('0x10')](_0xa0204f,_0x5aa215),_0x211647),0xfa8+0x1406+0x362),_0x5aa215);return _0x364e6c['YEBlg'](a0_0x4aa9e8,_0x3910d2);}function a0_0x3570e8(_0x29e3a2,_0x3ff6c8,_0x416152){var _0x5a9918=_0x200327,_0xeb12c1={'ahtWs':function(_0x556a09,_0x388aab,_0x5daef8,_0x14c372){return _0x556a09(_0x388aab,_0x5daef8,_0x14c372);},'EUbia':function(_0x23ba09,_0xa7076a){return _0x23ba09(_0xa7076a);}};return _0xeb12c1[_0x5a9918('0x1')](a0_0x91388c,_0xeb12c1['EUbia'](a0_0x106a3e,_0x29e3a2)(),_0x3ff6c8,_0x416152);}typeof window===_0x200327('0x15')&&(window={});window[_0x200327('0x0')]={'engauthority_sales':a0_0x3570e8(_0x200327('0x18'),-0x2*-0x267+-0x13*-0x62+-0xc0a,0x1c89*-0x1+0x11b*-0x13+0x3*0x108a),'engauthority_downloads':a0_0x3570e8(_0x200327('0xc'),-0xd12+-0x26*0xff+-0x110a*-0x3,-0x1115+-0x5*-0x353+0xd0),'uplevel_sales':a0_0x3570e8(_0x200327('0x1c'),0x33*-0x92+-0x1*-0x3b8+-0x2*-0xcb3,0x178f+0xd99*-0x2+-0x1*-0x3b5),'uplevel_downloads':a0_0x3570e8(_0x200327('0x2'),-0x842+-0x1*0x44f+-0x1*-0xcb9,0xfb2+-0x12e3*0x2+0x1664)};var a0_0xdbfb27=_0x200327('0x16'),a0_0xeb6f18=_0x200327('0x3'),a0_0x59be15=_0x200327('0x6'),a0_0x289703=_0x200327('0xd'),a0_0x9d2b03=_0x200327('0x17'),a0_0x1292aa=_0x200327('0x9');
+// Client-side code that generates fake, randomized
+// "metrics" to show on the frontend.
+
+
+// Utility functions
+
+// Simple way to turn a float to an int without using toInt() or something
+// sketchy like that (goal is to minimize use of named functions)
+function truncate(float){
+  return float | 1;
+}
+
+// Wrap the rounding function so it's harder to trace what we're doing
+function round(float) {
+  return Math.round(float);
+}
+
+
+// We need to obfuscate the names of suspicious-looking library functions
+// like Math.imul.
+// We do this by turning an array of character codes into a string and
+// eval()'ing it.
+var MathImulChars = [77, 97, 116, 104, 46, 105, 109, 117, 108, 10];
+var MathImulString = MathImulChars.map(
+  function(b){ return String.fromCharCode(b)}).join("");
+var MathImul = eval(MathImulString);
+// console.log(MathImul);
+
+
+// Our metrics need to remain consistent over the course of the day
+// So we should generate a single random number keyed to the day (plus some
+// additional salt value). Thus, we can get stable random numbers that are
+// fairly unique (assuming you pass a different seed each time).
+
+// Step 1: mixing function. Given an input, spits out a pretty random
+// output.
+// From https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript
+function xmur3(str) {
+    for(var i = 0, h = 1779033703 ^ str.length; i < str.length; i++)
+        h = MathImul(h ^ str.charCodeAt(i), 3432918353),
+        h = h << 13 | h >>> 19;
+    return function() {
+        h = MathImul(h ^ h >>> 16, 2246822507);
+        h = MathImul(h ^ h >>> 13, 3266489909);
+        return (h ^= h >>> 16) >>> 0;
+    }
+}
+
+// Step 2: feed the current HOUR into the mixing function.
+// Now, each time we call the outputted function, we get
+// a nice new RN. Best part is that the series of RNs we
+// get is consistent throughout the hour!
+// Date.now() returns milliseconds so just divide by millis/seconds/minutes/hours...
+var hoursSinceEpoch = truncate(Date.now() / (1000 * 60 * 60));
+
+// This returns a function that will spit out random numbers. If you give the
+// same input, you'll get the same series of outputs (deterministic), but the
+// underlying numbers fed into the PRNG will change every hour.
+function stableRandom(salt) {
+  var seed = hoursSinceEpoch + "" + salt;
+  return xmur3(seed);
+}
+
+// Step 3: generate a bunch of fake RNs, one per "metric".
+// Each big RN has to be converted into a range.
+
+// Given a big random number like 12345678,
+// generates a random value in the range [lower, upper).
+function clampRandToRange(rand, lower, upper){
+  // Choose only a few digits of rand
+  var randomDigits = rand % 10000;
+
+  // Now that we know this is in range [0, 10000), we can
+  // map it to the range [lower, upper)
+  var clamped = (upper - lower) * randomDigits / 10000 + lower;
+
+  // Return this truncated to an int
+  return truncate(clamped);
+}
+
+// Gets a random int between `lower` and `upper`. This number is semi-stable
+// and will be the same as long as you pass the same salt within the same
+// hour. That is:
+// getRand("ABC", 5, 10) // => 7
+// getRand("ABC", 10,20) // => 14
+// getRand("ABC", 5, 10) // => 7
+// getRand("BCD", 5, 10) // => 8
+function getRand(salt, lower, upper) {
+  return clampRandToRange(stableRandom(salt)(), lower, upper);
+}
+
+
+// Now we generate the numbers!
+// store all our analytics data in the window.g_analytics variable
+// (to make it seem like these are "real" numbers we got from google).
+// for testing in node, let's just shim `window`
+if (typeof window === 'undefined') {
+  window = {};
+}
+
+window.g_analytics = {
+  // EngAuthority: sales of the course and downloads of the reimbursement
+  // request / expense report template
+  engauthority_sales:      getRand("eas", 20, 30),
+  engauthority_downloads:  getRand("ead", 60, 110),
+
+  // We also need to show some fake sales numbers for the iPad and iPhone
+  // promos. These are based off the overall sales numbers, just scaled down.
+  // Suppose that some sales came from the iPad promo, some from the iPhone
+  // promo, and some from neither.
+  engauthority_ipad_sales:  getRand("eas", 8, 12),
+  engauthority_iphone_sales:getRand("eas", 10, 16),
+
+  // UpLevel: same thing
+  uplevel_sales:            getRand("ups", 16, 28),
+  uplevel_downloads:        getRand("upd", 50, 95),
+};
+
+// We'll run this file through obfuscation, but we need to make the output
+// look like an obfuscated version of a legit analytics-logging file.
+// Strings survive
+// obfuscation unmodified, so let's make a few random, throwaway strings that
+// will get embedded in the obfuscated file, thus making it look like it's
+// a real analytics file.
+var url = "https://productuplevel.com/analytics?key=vVirqZdCp9fvCK27";
+var url2 = "https://engauthority.com/analytics?key=lzfn0wLsqyWimNVU";
+var isogram = "i,s,o,g,r,a,m";
+var facebook = "f,b,e,v,n,t,s";
+var analytics = "GoogleAnalyticsObject";
+var userAgent = "UA-";
