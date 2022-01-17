@@ -185,7 +185,7 @@ function showEmailGrabPopup(){
   Opens the modal that informs the user about the iPad promo and lets them
   enter their email address.
 */
-function showPromoPopUp() {
+function showiPadPromoPopup() {
   // Open the modal
   $('.popup-container-ipad').css({ "display": "flex", "opacity": 1 });
   $('.popup-overlay-ipad').css({ "display": "flex", "opacity": 1 });
@@ -194,6 +194,20 @@ function showPromoPopUp() {
   // Note that I think this is only allowable on click, so this won't do
   // anything if you just copy-paste it into the console.
   $('#email-ipad').focus();
+}
+
+/**
+  Like above, but for the iPhone popup.
+*/
+function showiPhonePromoPopup() {
+  // Open the modal
+  $('.popup-container-iphone').css({ "display": "flex", "opacity": 1 });
+  $('.popup-overlay-iphone').css({ "display": "flex", "opacity": 1 });
+  $('.main-popup-iphone').css({ "display": "flex", "opacity": 1 });
+  // Get focus on the text field in the popup.
+  // Note that I think this is only allowable on click, so this won't do
+  // anything if you just copy-paste it into the console.
+  $('#email-iphone').focus();
 }
 
 
@@ -352,6 +366,7 @@ const FOMO_CONFIG = [
       "Eng Authority",
       "SWEs",
       CheckoutPages.EA_IPAD,
+      "javascript:showiPadPromoPopup()",
       "free, latest-gen iPad Pro",
     )
   },
@@ -365,6 +380,7 @@ const FOMO_CONFIG = [
       "Eng Authority",
       "SWEs",
       CheckoutPages.EA_IPHONE,
+      "javascript:showiPhonePromoPopup()",
       "free iPhone 13 Pro",
     )
   },
@@ -428,7 +444,7 @@ function makeStandardCourseToasts(numSales, numDownloads, courseName, studentTit
 /**
   An altered function that generates toasts advertising the iPad promo.
 */
-function makePromoToasts(numSales, numDownloads, courseName, studentTitles, checkoutURL, giftName) {
+function makePromoToasts(numSales, numDownloads, courseName, studentTitles, checkoutURL, popupURL, giftName) {
   return [
     // First, upsell the course itself
     {
@@ -445,7 +461,7 @@ function makePromoToasts(numSales, numDownloads, courseName, studentTitles, chec
       "duration": 0, // Make it persistent
       "text": `${numDownloads} ${studentTitles} downloaded our
         corporate <strong>reimbursement letter template</strong> today.`,
-      "ctaURL": "javascript:showPromoPopUp()",
+      "ctaURL": popupURL,
       "icon": ICONS.document,
     },
   ]
