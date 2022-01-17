@@ -214,7 +214,10 @@ function showiPhonePromoPopup() {
   // Get focus on the text field in the popup.
   // Note that I think this is only allowable on click, so this won't do
   // anything if you just copy-paste it into the console.
-  $('#email-iphone').focus();
+  // $('#email-iphone').focus();
+
+  // Yeah just reuse this naming too so everything stays consistent
+  $('#email-ipad').focus();
 }
 
 
