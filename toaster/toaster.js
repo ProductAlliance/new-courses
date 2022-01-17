@@ -71,6 +71,8 @@ const CheckoutPages = {
   // The variant of the EngAuthority checkout page that highlights the
   // iPad offer
   EA_IPAD:        "https://course.engauthority.com/offers/LvoqAHBS/checkout",
+  // This variant is for the iPhone offer
+  EA_IPHONE:      "https://course.engauthority.com/offers/WUXbz2HE/checkout",
 };
 
 // List of domains we could be on, one per course. We set it up so that
@@ -85,6 +87,8 @@ const DomainRegexes = {
   // for everyone else. That promo lives at:
   //  https://www.engauthority.com/promo/20225525
   EA_IPAD:      /engauthority\..*\/promo\/20225525/i,
+  // Oh and another promo for the iPhone promo
+  EA_IPHONE:    /engauthority\..*\/promo\/48330318/i,
   ENGAUTHORITY: /engauthority\./i,
 }
 
@@ -343,12 +347,25 @@ const FOMO_CONFIG = [
     // iPad promo
     "pageRegex": DomainRegexes.EA_IPAD,
     "toasts": makePromoToasts(
-      g_analytics.engauthority_sales,
+      g_analytics.engauthority_ipad_sales,
       g_analytics.engauthority_downloads,
       "Eng Authority",
       "SWEs",
       CheckoutPages.EA_IPAD,
-      "iPad Pro",
+      "free, latest-gen iPad Pro",
+    )
+  },
+  // Oh and another one for the iPhone promo
+  {
+    // iPhone promo
+    "pageRegex": DomainRegexes.EA_IPHONE,
+    "toasts": makePromoToasts(
+      g_analytics.engauthority_iphone_sales,
+      g_analytics.engauthority_downloads,
+      "Eng Authority",
+      "SWEs",
+      CheckoutPages.EA_IPHONE,
+      "free iPhone 13 Pro",
     )
   },
   {
@@ -417,7 +434,7 @@ function makePromoToasts(numSales, numDownloads, courseName, studentTitles, chec
     {
       "time": 6000,
       "duration": 20000,
-      "text": `${numSales} ${studentTitles} enrolled in ${courseName} today and <strong>got their free, latest-gen ${giftName}</strong>.`,
+      "text": `${numSales} ${studentTitles} enrolled in ${courseName} today and <strong>got their ${giftName}</strong>.`,
       "ctaURL": checkoutURL,
       "icon": ICONS.gift,
     },
