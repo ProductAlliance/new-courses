@@ -201,9 +201,16 @@ function showiPadPromoPopup() {
 */
 function showiPhonePromoPopup() {
   // Open the modal
-  $('.popup-container-iphone').css({ "display": "flex", "opacity": 1 });
-  $('.popup-overlay-iphone').css({ "display": "flex", "opacity": 1 });
-  $('.main-popup-iphone').css({ "display": "flex", "opacity": 1 });
+  // $('.popup-container-iphone').css({ "display": "flex", "opacity": 1 });
+  // $('.popup-overlay-iphone').css({ "display": "flex", "opacity": 1 });
+  // $('.main-popup-iphone').css({ "display": "flex", "opacity": 1 });
+
+  // Note: for webflow reasons we're going to reuse the same selectors as
+  // ipad (since all other styling is the same)
+  $('.popup-container-ipad').css({ "display": "flex", "opacity": 1 });
+  $('.popup-overlay-ipad').css({ "display": "flex", "opacity": 1 });
+  $('.main-popup-ipad').css({ "display": "flex", "opacity": 1 });
+
   // Get focus on the text field in the popup.
   // Note that I think this is only allowable on click, so this won't do
   // anything if you just copy-paste it into the console.
